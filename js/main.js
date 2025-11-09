@@ -134,3 +134,24 @@ const sr = ScrollReveal({
 sr.reveal(`.home__perfil, .contact__mail`, {origin: 'right'})
 sr.reveal(`.home__name, .home__info, .about__container, .about__image, .section__title-1, .about__info, .contact__social, .contact__data`, {origin: 'left'})
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
+sr.reveal(`.testimonials__gallery`, {origin: 'bottom'})
+
+/*=============== TESTIMONIALS CIRCULAR GALLERY ===============*/
+const testimonialsTrack = document.querySelector('.testimonials__track');
+
+// Clone testimonial cards to create seamless infinite scroll
+if (testimonialsTrack) {
+    const cards = Array.from(testimonialsTrack.children);
+    const originalCardsCount = cards.length;
+    
+    // Clone all cards exactly once to create seamless loop
+    // When animation reaches -50%, it will show the cloned set
+    // which looks identical to the original, creating seamless effect
+    cards.forEach(card => {
+        const clone = card.cloneNode(true);
+        testimonialsTrack.appendChild(clone);
+    });
+    
+    console.log(`Testimonials: ${originalCardsCount} original cards + ${originalCardsCount} cloned = ${testimonialsTrack.children.length} total`);
+}
+
