@@ -817,7 +817,7 @@ body.dark-theme {
 
 /*=============== TESTIMONIALS ===============*/
 .testimonials {
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
   transition: background-color .4s;
 }
 
