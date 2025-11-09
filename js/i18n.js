@@ -102,6 +102,13 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Apply the saved language and update display
   applyLanguage(currentLang);
   updateCurrentLanguageDisplay(currentLang);
+  
+  // Update active option based on saved language
+  languageOptions.forEach((opt) => opt.classList.remove("active"));
+  const savedLanguageOption = document.querySelector(`.language-switcher__option[data-lang="${currentLang}"]`);
+  if (savedLanguageOption) {
+    savedLanguageOption.classList.add("active");
+  }
 
   // Toggle language dropdown
   languageSwitcher.addEventListener("click", function (e) {
