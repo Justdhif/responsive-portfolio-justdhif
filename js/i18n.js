@@ -1,18 +1,47 @@
 // Store translations globally
 let translations = {};
 
-// Available languages
-const availableLanguages = ["en", "id", "es", "ar"];
+// Available languages with their regions
+const languageRegions = {
+  asia: ["en", "id", "zh", "ja", "ko"],
+  america: ["es", "pt", "fr-ca"],
+  europe: ["fr", "de", "it", "ru", "nl"],
+  "middle-east": ["ar", "tr", "he", "fa"]
+};
+
+// All available languages
+const availableLanguages = [
+  ...languageRegions.asia,
+  ...languageRegions.america,
+  ...languageRegions.europe,
+  ...languageRegions["middle-east"]
+];
+
+// Get region for a language
+function getRegionForLanguage(lang) {
+  for (const [region, languages] of Object.entries(languageRegions)) {
+    if (languages.includes(lang)) {
+      return region;
+    }
+  }
+  return "asia"; // Default fallback
+}
 
 // Load translation for a specific language
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`assets/locales/${lang}.json`);
+    const region = getRegionForLanguage(lang);
+    const response = await fetch(`assets/locales/${region}/${lang}.json`);
     const data = await response.json();
     translations[lang] = data;
     return data;
   } catch (error) {
     console.error(`Error loading ${lang} translations:`, error);
+    // Fallback to English if loading fails
+    if (lang !== "en") {
+      console.log(`Falling back to English...`);
+      return loadLanguage("en");
+    }
     return null;
   }
 }
@@ -46,11 +75,33 @@ document.addEventListener("DOMContentLoaded", async function () {
   );
   const languageOverlay = document.querySelector(".language-switcher__overlay");
 
+  // Language code to short name mapping
+  const languageShortNames = {
+    "en": "EN",
+    "id": "ID",
+    "zh": "ZH",
+    "ja": "JA",
+    "ko": "KO",
+    "es": "ES",
+    "pt": "PT",
+    "fr-ca": "FR",
+    "fr": "FR",
+    "de": "DE",
+    "it": "IT",
+    "ru": "RU",
+    "nl": "NL",
+    "ar": "AR",
+    "tr": "TR",
+    "he": "HE",
+    "fa": "FA"
+  };
+
   // Get saved language from localStorage or default to English
   let currentLang = localStorage.getItem("language") || "en";
 
-  // Apply the saved language
+  // Apply the saved language and update display
   applyLanguage(currentLang);
+  updateCurrentLanguageDisplay(currentLang);
 
   // Toggle language dropdown
   languageSwitcher.addEventListener("click", function (e) {
@@ -73,6 +124,23 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   });
 
+  // Function to update current language display
+  function updateCurrentLanguageDisplay(lang) {
+    const selectedOption = document.querySelector(`.language-switcher__option[data-lang="${lang}"]`);
+    if (selectedOption) {
+      const selectedFlag = selectedOption.querySelector(".language-switcher__flag").textContent;
+      const shortName = languageShortNames[lang] || lang.toUpperCase();
+      
+      if (currentLanguageText) {
+        currentLanguageText.textContent = shortName;
+      }
+      
+      if (currentLanguageFlag) {
+        currentLanguageFlag.textContent = selectedFlag;
+      }
+    }
+  }
+
   // Change language when an option is clicked
   languageOptions.forEach((option) => {
     option.addEventListener("click", function () {
@@ -84,17 +152,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       languageOptions.forEach((opt) => opt.classList.remove("active"));
       this.classList.add("active");
 
-      // Update current language display (text and flag)
-      const selectedText = this.querySelector("span:not(.language-switcher__flag)").textContent;
-      const selectedFlag = this.querySelector(".language-switcher__flag").textContent;
-      
-      if (currentLanguageText) {
-        currentLanguageText.textContent = selectedText;
-      }
-      
-      if (currentLanguageFlag) {
-        currentLanguageFlag.textContent = selectedFlag;
-      }
+      // Update current language display with short code
+      updateCurrentLanguageDisplay(lang);
 
       // Save language preference
       localStorage.setItem("language", lang);
@@ -113,7 +172,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     document.documentElement.lang = lang;
 
     // Update direction for RTL languages
-    if (lang === "ar") {
+    const rtlLanguages = ["ar", "he", "fa"];
+    if (rtlLanguages.includes(lang)) {
       document.documentElement.dir = "rtl";
     } else {
       document.documentElement.dir = "ltr";
