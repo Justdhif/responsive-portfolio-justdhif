@@ -124,6 +124,23 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   });
 
+  // Close dropdown when scrolling the page
+  let scrollTimeout;
+  window.addEventListener("scroll", function () {
+    // Clear previous timeout
+    clearTimeout(scrollTimeout);
+    
+    // Close dropdown immediately when scrolling starts
+    if (languageSwitcher.classList.contains("active")) {
+      languageSwitcher.classList.remove("active");
+    }
+    
+    // Optional: Add a small delay before allowing dropdown to open again
+    scrollTimeout = setTimeout(function () {
+      // Dropdown can be opened again after scroll stops
+    }, 150);
+  }, { passive: true });
+
   // Function to update current language display
   function updateCurrentLanguageDisplay(lang) {
     const selectedOption = document.querySelector(`.language-switcher__option[data-lang="${lang}"]`);
