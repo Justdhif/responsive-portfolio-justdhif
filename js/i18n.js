@@ -203,23 +203,49 @@ document.addEventListener("DOMContentLoaded", async function () {
       document.documentElement.dir = "ltr";
     }
 
+    // Helper: resolve a translation key with fallbacks
+    // - Try exact key (e.g. "testimonials.title")
+    // - If not found and key contains dots, try a parent key (e.g. "testimonials")
+    // - If still not found, return null
+    function resolveTranslation(obj, key) {
+      if (!obj) return null;
+      if (Object.prototype.hasOwnProperty.call(obj, key)) return obj[key];
+
+      // If keys are stored flattened using dots (as in the JSON files),
+      // sometimes a child key like "testimonials.title" may be missing while
+      // a parent key like "testimonials" exists. Try falling back to the
+      // parent key(s).
+      if (key.includes('.')) {
+        const parts = key.split('.');
+        // Try progressively shorter fallbacks: first drop the last segment
+        for (let i = parts.length - 1; i > 0; i--) {
+          const fallback = parts.slice(0, i).join('.');
+          if (Object.prototype.hasOwnProperty.call(obj, fallback)) return obj[fallback];
+        }
+      }
+
+      return null;
+    }
+
     // Update all elements with data-i18n attribute
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
-      if (translations[lang] && translations[lang][key]) {
+      const translated = resolveTranslation(translations[lang], key);
+      if (translated !== null && translated !== undefined) {
         if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
-          element.placeholder = translations[lang][key];
+          element.placeholder = translated;
         } else {
-          element.innerHTML = translations[lang][key];
+          element.innerHTML = translated;
         }
       }
     });
 
-    // Update placeholders separately
+    // Update placeholders separately (with the same resolver)
     document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
       const key = element.getAttribute("data-i18n-placeholder");
-      if (translations[lang] && translations[lang][key]) {
-        element.placeholder = translations[lang][key];
+      const translated = resolveTranslation(translations[lang], key);
+      if (translated !== null && translated !== undefined) {
+        element.placeholder = translated;
       }
     });
   }
