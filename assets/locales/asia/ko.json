@@ -67,5 +67,11 @@
   "testimonials.dave.body": "인상적인 기술! 제 웹사이트가 멋져 보입니다.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "고품질의 작업과 세부 사항에 대한 관심. 다시 그를 고용하겠습니다!"
+  "testimonials.eve.body": "고품질의 작업과 세부 사항에 대한 관심. 다시 그를 고용하겠습니다!",
+  "settings.title": "사용자 정의",
+  "settings.customize": "사용자 정의",
+  "settings.theme": "테마 모드",
+  "settings.light": "라이트",
+  "settings.dark": "다크",
+  "settings.language": "언어"
 }

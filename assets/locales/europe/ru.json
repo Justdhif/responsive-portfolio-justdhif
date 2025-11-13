@@ -67,5 +67,11 @@
   "testimonials.dave.body": "Впечатляющие навыки! Мой сайт выглядит потрясающе.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "Высококачественная работа и внимание к деталям. Я бы наняла его снова!"
+  "testimonials.eve.body": "Высококачественная работа и внимание к деталям. Я бы нанял его снова!",
+  "settings.title": "Настроить",
+  "settings.customize": "НАСТРОИТЬ",
+  "settings.theme": "Режим темы",
+  "settings.light": "Светлая",
+  "settings.dark": "Тёмная",
+  "settings.language": "Язык"
 }

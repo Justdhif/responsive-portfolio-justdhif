@@ -67,5 +67,11 @@
   "testimonials.dave.body": "כישורים מרשימים! האתר שלי נראה מדהים.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "עבודה באיכות גבוהה ותשומת לב לפרטים. הייתי מעסיק אותו שוב!"
+  "testimonials.eve.body": "עבודה איכותית ותשומת לב לפרטים. הייתי שוכר אותו שוב!",
+  "settings.title": "התאמה אישית",
+  "settings.customize": "התאמה אישית",
+  "settings.theme": "מצב ערכת נושא",
+  "settings.light": "בהיר",
+  "settings.dark": "כהה",
+  "settings.language": "שפה"
 }

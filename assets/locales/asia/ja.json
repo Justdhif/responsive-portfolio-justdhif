@@ -67,5 +67,11 @@
   "testimonials.dave.body": "印象的なスキル！私のウェブサイトは素晴らしく見えます。",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "高品質な仕事と細部への配慮。また彼を雇います！"
+  "testimonials.eve.body": "高品質な仕事と細部への配慮。また彼を雇います！",
+  "settings.title": "カスタマイズ",
+  "settings.customize": "カスタマイズ",
+  "settings.theme": "テーマモード",
+  "settings.light": "ライト",
+  "settings.dark": "ダーク",
+  "settings.language": "言語"
 }

@@ -67,5 +67,11 @@
   "testimonials.dave.body": "Etkileyici beceriler! Web sitem harika görünüyor.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "Yüksek kaliteli iş ve detaylara dikkat. Tekrar işe alırdım!"
+  "testimonials.eve.body": "Yüksek kaliteli iş ve detaylara özen. Onu tekrar işe alırdım!",
+  "settings.title": "Özelleştir",
+  "settings.customize": "ÖZELLEŞTİR",
+  "settings.theme": "Tema Modu",
+  "settings.light": "Açık",
+  "settings.dark": "Koyu",
+  "settings.language": "Dil"
 }

@@ -67,5 +67,11 @@
   "testimonials.dave.body": "令人印象深刻的技能！我的网站看起来很棒。",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "高质量的工作，注重细节。我会再次聘请他！"
+  "testimonials.eve.body": "高质量的工作，注重细节。我会再次聘请他！",
+  "settings.title": "自定义",
+  "settings.customize": "自定义",
+  "settings.theme": "主题模式",
+  "settings.light": "浅色",
+  "settings.dark": "深色",
+  "settings.language": "语言"
 }

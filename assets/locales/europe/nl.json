@@ -67,5 +67,11 @@
   "testimonials.dave.body": "Indrukwekkende vaardigheden! Mijn website ziet er geweldig uit.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "Werk van hoge kwaliteit en aandacht voor detail. Ik zou hem opnieuw inhuren!"
+  "testimonials.eve.body": "Werk van hoge kwaliteit en aandacht voor detail. Ik zou hem weer inhuren!",
+  "settings.title": "Aanpassen",
+  "settings.customize": "AANPASSEN",
+  "settings.theme": "Thema Modus",
+  "settings.light": "Licht",
+  "settings.dark": "Donker",
+  "settings.language": "Taal"
 }

@@ -67,5 +67,11 @@
   "testimonials.dave.body": "Competenze impressionanti! Il mio sito web è fantastico.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "Lavoro di alta qualità e attenzione ai dettagli. Lo assumerei di nuovo!"
+  "testimonials.eve.body": "Lavoro di alta qualità e attenzione ai dettagli. Lo riassumerei!",
+  "settings.title": "Personalizza",
+  "settings.customize": "PERSONALIZZA",
+  "settings.theme": "Modalità Tema",
+  "settings.light": "Chiaro",
+  "settings.dark": "Scuro",
+  "settings.language": "Lingua"
 }

@@ -68,5 +68,11 @@
   "contact.form.send": "Send Message",
   "contact.social.description1": "Does not send emails",
   "contact.social.description2": "Write me on my social networks",
-  "footer.rights": "All Rights Reserved By"
+  "footer.rights": "All Rights Reserved By",
+  "settings.title": "Customize",
+  "settings.customize": "CUSTOMIZE",
+  "settings.theme": "Theme Mode",
+  "settings.light": "Light",
+  "settings.dark": "Dark",
+  "settings.language": "Language"
 }

@@ -68,5 +68,11 @@
   "contact.form.send": "Kirim Pesan",
   "contact.social.description1": "Tidak mengirim email",
   "contact.social.description2": "Tulis saya di media sosial saya",
-  "footer.rights": "Hak Cipta Dilindungi Oleh"
+  "footer.rights": "Hak Cipta Dilindungi Oleh",
+  "settings.title": "Kustomisasi",
+  "settings.customize": "KUSTOMISASI",
+  "settings.theme": "Mode Tema",
+  "settings.light": "Terang",
+  "settings.dark": "Gelap",
+  "settings.language": "Bahasa"
 }

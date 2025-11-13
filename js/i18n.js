@@ -249,4 +249,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     });
   }
+
+  // Expose changeLanguage function globally for settings sidebar
+  window.changeLanguage = function(lang) {
+    applyLanguage(lang);
+    // Save language preference
+    localStorage.setItem("language", lang);
+    localStorage.setItem("selectedLanguage", lang); // Also save with this key for settings sidebar
+  };
 });

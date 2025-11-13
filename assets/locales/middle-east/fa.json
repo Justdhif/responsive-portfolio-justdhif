@@ -67,5 +67,11 @@
   "testimonials.dave.body": "مهارت‌های چشمگیر! وب‌سایت من فوق‌العاده به نظر می‌رسد.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "کار با کیفیت بالا و توجه به جزئیات. دوباره او را استخدام خواهم کرد!"
+  "testimonials.eve.body": "کار با کیفیت بالا و توجه به جزئیات. دوباره او را استخدام می‌کردم!",
+  "settings.title": "سفارشی‌سازی",
+  "settings.customize": "سفارشی‌سازی",
+  "settings.theme": "حالت تم",
+  "settings.light": "روشن",
+  "settings.dark": "تاریک",
+  "settings.language": "زبان"
 }

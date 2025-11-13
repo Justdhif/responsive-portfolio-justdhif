@@ -67,5 +67,11 @@
   "testimonials.dave.body": "مهارات مذهلة! موقعي الإلكتروني يبدو رائعًا.",
   "testimonials.eve.name": "Eve",
   "testimonials.eve.username": "@eve",
-  "testimonials.eve.body": "عمل عالي الجودة واهتمام بالتفاصيل. سأوظفه مرة أخرى!"
+  "testimonials.eve.body": "عمل عالي الجودة واهتمام بالتفاصيل. سأوظفه مرة أخرى!",
+  "settings.title": "تخصيص",
+  "settings.customize": "تخصيص",
+  "settings.theme": "وضع المظهر",
+  "settings.light": "فاتح",
+  "settings.dark": "داكن",
+  "settings.language": "اللغة"
 }
