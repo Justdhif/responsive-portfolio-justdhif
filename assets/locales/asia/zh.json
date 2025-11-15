@@ -73,5 +73,15 @@
   "settings.theme": "主题模式",
   "settings.light": "浅色",
   "settings.dark": "深色",
-  "settings.language": "语言"
+  "settings.language": "语言",
+  "colorSwitcher.presets": "预设",
+  "colorSwitcher.pick": "选择",
+  "colorSwitcher.hex": "十六进制",
+  "colorSwitcher.reset": "重置",
+  "colorSwitcher.orange": "橙色",
+  "colorSwitcher.blue": "蓝色",
+  "colorSwitcher.green": "绿色",
+  "colorSwitcher.red": "红色",
+  "colorSwitcher.purple": "紫色",
+  "colorSwitcher.yellow": "黄色"
 }

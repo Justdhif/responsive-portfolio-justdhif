@@ -73,5 +73,15 @@
   "settings.theme": "Режим темы",
   "settings.light": "Светлая",
   "settings.dark": "Тёмная",
-  "settings.language": "Язык"
+  "settings.language": "Язык",
+  "colorSwitcher.presets": "Пресеты",
+  "colorSwitcher.pick": "Выбрать",
+  "colorSwitcher.hex": "Hex",
+  "colorSwitcher.reset": "Сбросить",
+  "colorSwitcher.orange": "Оранжевый",
+  "colorSwitcher.blue": "Синий",
+  "colorSwitcher.green": "Зелёный",
+  "colorSwitcher.red": "Красный",
+  "colorSwitcher.purple": "Фиолетовый",
+  "colorSwitcher.yellow": "Жёлтый"
 }

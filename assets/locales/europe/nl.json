@@ -73,5 +73,15 @@
   "settings.theme": "Thema Modus",
   "settings.light": "Licht",
   "settings.dark": "Donker",
-  "settings.language": "Taal"
+  "settings.language": "Taal",
+  "colorSwitcher.presets": "Voorinstellingen",
+  "colorSwitcher.pick": "Kiezen",
+  "colorSwitcher.hex": "Hex",
+  "colorSwitcher.reset": "Resetten",
+  "colorSwitcher.orange": "Oranje",
+  "colorSwitcher.blue": "Blauw",
+  "colorSwitcher.green": "Groen",
+  "colorSwitcher.red": "Rood",
+  "colorSwitcher.purple": "Paars",
+  "colorSwitcher.yellow": "Geel"
 }

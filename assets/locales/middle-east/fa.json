@@ -73,5 +73,15 @@
   "settings.theme": "حالت تم",
   "settings.light": "روشن",
   "settings.dark": "تاریک",
-  "settings.language": "زبان"
+  "settings.language": "زبان",
+  "colorSwitcher.presets": "پیش‌تنظیم‌ها",
+  "colorSwitcher.pick": "انتخاب",
+  "colorSwitcher.hex": "هگز",
+  "colorSwitcher.reset": "بازنشانی",
+  "colorSwitcher.orange": "نارنجی",
+  "colorSwitcher.blue": "آبی",
+  "colorSwitcher.green": "سبز",
+  "colorSwitcher.red": "قرمز",
+  "colorSwitcher.purple": "بنفش",
+  "colorSwitcher.yellow": "زرد"
 }

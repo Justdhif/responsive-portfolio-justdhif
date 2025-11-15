@@ -74,5 +74,15 @@
   "settings.theme": "Theme Mode",
   "settings.light": "Light",
   "settings.dark": "Dark",
-  "settings.language": "Language"
+  "settings.language": "Language",
+  "colorSwitcher.presets": "Presets",
+  "colorSwitcher.pick": "Pick",
+  "colorSwitcher.hex": "Hex",
+  "colorSwitcher.reset": "Reset",
+  "colorSwitcher.orange": "Orange",
+  "colorSwitcher.blue": "Blue",
+  "colorSwitcher.green": "Green",
+  "colorSwitcher.red": "Red",
+  "colorSwitcher.purple": "Purple",
+  "colorSwitcher.yellow": "Yellow"
 }

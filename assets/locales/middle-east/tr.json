@@ -73,5 +73,15 @@
   "settings.theme": "Tema Modu",
   "settings.light": "Açık",
   "settings.dark": "Koyu",
-  "settings.language": "Dil"
+  "settings.language": "Dil",
+  "colorSwitcher.presets": "Ön Ayarlar",
+  "colorSwitcher.pick": "Seç",
+  "colorSwitcher.hex": "Hex",
+  "colorSwitcher.reset": "Sıfırla",
+  "colorSwitcher.orange": "Turuncu",
+  "colorSwitcher.blue": "Mavi",
+  "colorSwitcher.green": "Yeşil",
+  "colorSwitcher.red": "Kırmızı",
+  "colorSwitcher.purple": "Mor",
+  "colorSwitcher.yellow": "Sarı"
 }

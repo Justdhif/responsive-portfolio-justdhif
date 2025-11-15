@@ -73,5 +73,15 @@
   "settings.theme": "وضع المظهر",
   "settings.light": "فاتح",
   "settings.dark": "داكن",
-  "settings.language": "اللغة"
+  "settings.language": "اللغة",
+  "colorSwitcher.presets": "الإعدادات المسبقة",
+  "colorSwitcher.pick": "اختر",
+  "colorSwitcher.hex": "ست عشري",
+  "colorSwitcher.reset": "إعادة تعيين",
+  "colorSwitcher.orange": "برتقالي",
+  "colorSwitcher.blue": "أزرق",
+  "colorSwitcher.green": "أخضر",
+  "colorSwitcher.red": "أحمر",
+  "colorSwitcher.purple": "بنفسجي",
+  "colorSwitcher.yellow": "أصفر"
 }

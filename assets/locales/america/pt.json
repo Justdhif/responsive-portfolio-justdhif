@@ -73,5 +73,15 @@
   "settings.theme": "Modo de Tema",
   "settings.light": "Claro",
   "settings.dark": "Escuro",
-  "settings.language": "Idioma"
+  "settings.language": "Idioma",
+  "colorSwitcher.presets": "Predefinições",
+  "colorSwitcher.pick": "Escolher",
+  "colorSwitcher.hex": "Hex",
+  "colorSwitcher.reset": "Redefinir",
+  "colorSwitcher.orange": "Laranja",
+  "colorSwitcher.blue": "Azul",
+  "colorSwitcher.green": "Verde",
+  "colorSwitcher.red": "Vermelho",
+  "colorSwitcher.purple": "Roxo",
+  "colorSwitcher.yellow": "Amarelo"
 }

@@ -73,5 +73,15 @@
   "settings.theme": "מצב ערכת נושא",
   "settings.light": "בהיר",
   "settings.dark": "כהה",
-  "settings.language": "שפה"
+  "settings.language": "שפה",
+  "colorSwitcher.presets": "ערכות מוקדמות",
+  "colorSwitcher.pick": "בחר",
+  "colorSwitcher.hex": "הקס",
+  "colorSwitcher.reset": "איפוס",
+  "colorSwitcher.orange": "כתום",
+  "colorSwitcher.blue": "כחול",
+  "colorSwitcher.green": "ירוק",
+  "colorSwitcher.red": "אדום",
+  "colorSwitcher.purple": "סגול",
+  "colorSwitcher.yellow": "צהוב"
 }

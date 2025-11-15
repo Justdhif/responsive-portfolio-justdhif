@@ -73,5 +73,15 @@
   "settings.theme": "テーマモード",
   "settings.light": "ライト",
   "settings.dark": "ダーク",
-  "settings.language": "言語"
+  "settings.language": "言語",
+  "colorSwitcher.presets": "プリセット",
+  "colorSwitcher.pick": "選択",
+  "colorSwitcher.hex": "16進数",
+  "colorSwitcher.reset": "リセット",
+  "colorSwitcher.orange": "オレンジ",
+  "colorSwitcher.blue": "青",
+  "colorSwitcher.green": "緑",
+  "colorSwitcher.red": "赤",
+  "colorSwitcher.purple": "紫",
+  "colorSwitcher.yellow": "黄"
 }

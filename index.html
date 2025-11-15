@@ -191,6 +191,55 @@
           <!--=============== THEME BUTTON ===============-->
           <i class="ri-moon-line change-theme" id="theme-button"></i>
 
+          <!--=============== COLOR SWITCHER ===============-->
+          <div class="color-switcher" id="color-switcher">
+            <button class="color-switcher__toggle" id="color-button" aria-label="Toggle color switcher">
+              <i class="fa-solid fa-palette"></i>
+            </button>
+            <div class="color-switcher__panel" id="color-panel" aria-hidden="true">
+              <!-- Presets Section -->
+              <div class="color-switcher__section">
+                <h4 class="color-switcher__title" data-i18n="colorSwitcher.presets">Presets</h4>
+                <div class="color-switcher__presets" role="list">
+                  <button class="color-swatch" data-color="#ff5c1a" style="--swatch:#ff5c1a" aria-label="Orange" data-i18n-aria="colorSwitcher.orange"></button>
+                  <button class="color-swatch" data-color="#3b82f6" style="--swatch:#3b82f6" aria-label="Blue" data-i18n-aria="colorSwitcher.blue"></button>
+                  <button class="color-swatch" data-color="#22c55e" style="--swatch:#22c55e" aria-label="Green" data-i18n-aria="colorSwitcher.green"></button>
+                  <button class="color-swatch" data-color="#ef4444" style="--swatch:#ef4444" aria-label="Red" data-i18n-aria="colorSwitcher.red"></button>
+                  <button class="color-swatch" data-color="#a855f7" style="--swatch:#a855f7" aria-label="Purple" data-i18n-aria="colorSwitcher.purple"></button>
+                  <button class="color-swatch" data-color="#eab308" style="--swatch:#eab308" aria-label="Yellow" data-i18n-aria="colorSwitcher.yellow"></button>
+                </div>
+              </div>
+
+              <!-- Custom Picker Section -->
+              <div class="color-switcher__section">
+                <h4 class="color-switcher__title" data-i18n="colorSwitcher.pick">Custom</h4>
+                <div class="color-picker">
+                  <!-- Color Preview -->
+                  <div class="color-preview">
+                    <div class="color-preview__swatch" id="color-preview"></div>
+                    <input type="text" id="color-hex" class="color-preview__hex" placeholder="#ff5c1a" maxlength="7" />
+                  </div>
+                  
+                  <!-- Saturation/Lightness Canvas -->
+                  <div class="color-canvas" id="color-canvas">
+                    <div class="color-canvas__cursor" id="canvas-cursor"></div>
+                  </div>
+                  
+                  <!-- Hue Slider -->
+                  <div class="color-slider-group">
+                    <label class="color-slider__label">H</label>
+                    <input type="range" id="hue-slider" class="color-slider color-slider--hue" min="0" max="360" value="14" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Actions -->
+              <div class="color-switcher__actions">
+                <button class="color-switcher__reset" id="color-reset" type="button" data-i18n="colorSwitcher.reset">Reset</button>
+              </div>
+            </div>
+          </div>
+
           <!--=============== TOGGLE BUTTON ===============-->
           <div class="nav__toggle" id="nav-toggle">
             <i class="fa-solid fa-bars"></i> 
@@ -1205,5 +1254,8 @@
 
     <!--=============== LANGUAGE JS ===============-->
     <script src="js/i18n.js"></script>
+
+    <!--=============== COLOR SWITCHER JS ===============-->
+    <script src="js/color-switcher.js"></script>
   </body>
 </html>

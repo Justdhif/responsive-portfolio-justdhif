@@ -74,5 +74,15 @@
   "settings.theme": "Mode Tema",
   "settings.light": "Terang",
   "settings.dark": "Gelap",
-  "settings.language": "Bahasa"
+  "settings.language": "Bahasa",
+  "colorSwitcher.presets": "Preset",
+  "colorSwitcher.pick": "Pilih",
+  "colorSwitcher.hex": "Hex",
+  "colorSwitcher.reset": "Reset",
+  "colorSwitcher.orange": "Oranye",
+  "colorSwitcher.blue": "Biru",
+  "colorSwitcher.green": "Hijau",
+  "colorSwitcher.red": "Merah",
+  "colorSwitcher.purple": "Ungu",
+  "colorSwitcher.yellow": "Kuning"
 }
