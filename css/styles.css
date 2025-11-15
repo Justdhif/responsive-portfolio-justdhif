@@ -375,6 +375,77 @@ img {
   box-shadow: 0 4px 12px hsla(0,0%,0%,.15);
 }
 
+/* Theme Switcher */
+.theme-switcher {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+}
+
+.theme-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.theme-option:hover {
+  border-color: var(--first-color);
+  transform: scale(1.02);
+}
+
+.theme-option.active::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  background: var(--first-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-option.active::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 8px;
+  height: 8px;
+  background: var(--white-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.theme-option__icon {
+  /* width: 60px; */
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid var(--black-color-light);
+}
+
+.theme-option.active .theme-option__icon {
+  border-color: var(--first-color);
+}
+
+.theme-option__label {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  text-align: center;
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color: hsl(14, 80%, 50%);
@@ -396,7 +467,7 @@ body.dark-theme {
 
 .dark-theme .section__title-1::after,
 .dark-theme .section__title-2::after {
-  background-color: hsla(14, 70%, 50%, .2);
+  background-color: color-mix(in srgb, var(--first-color) 20%, transparent);
 }
 
 .dark-theme :is(.home__arrow, .home__line, .about__line) {
@@ -404,7 +475,7 @@ body.dark-theme {
 }
 
 .dark-theme .home__description b {
-  background: linear-gradient(90deg, var(--first-color), hsla(14, 80%, 50%, .0));
+  background: linear-gradient(90deg, color-mix(in srgb, var(--first-color) 50%, transparent), hsla(14, 80%, 50%, .0));
 }
 
 .dark-theme :is(.button__ghost, .services__icon i) {
@@ -478,7 +549,7 @@ body.dark-theme {
   content: "";
   width: 40px;
   height: 28px;
-  background-color: hsla(14, 98%, 50%, .2);
+  background-color: color-mix(in srgb, var(--first-color) 20%, transparent);
   position: absolute;
   top: -4px;
   right: -8px;
@@ -764,7 +835,7 @@ body.dark-theme {
 }
 
 .home__description b { 
-  background: linear-gradient(90deg, var(--first-color), hsla(14, 98%, 50%, 0));
+  background: linear-gradient(90deg, color-mix(in srgb, var(--first-color) 20%, transparent), hsla(14, 98%, 50%, 0));
 }
 
 .home__scroll {

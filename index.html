@@ -188,15 +188,31 @@
             </div>
           </div>
 
-          <!--=============== THEME BUTTON ===============-->
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-          <!--=============== COLOR SWITCHER ===============-->
+          <!--=============== COLOR & THEME SWITCHER ===============-->
           <div class="color-switcher" id="color-switcher">
             <button class="color-switcher__toggle" id="color-button" aria-label="Toggle color switcher">
               <i class="fa-solid fa-palette"></i>
             </button>
             <div class="color-switcher__panel" id="color-panel" aria-hidden="true">
+              <!-- Theme Mode Section -->
+              <div class="color-switcher__section">
+                <h4 class="color-switcher__title" data-i18n="colorSwitcher.theme">Theme</h4>
+                <div class="theme-switcher">
+                  <button class="theme-option" data-theme="light" aria-label="Light theme">
+                    <img src="assets/img/icons/light-theme-icon.svg" alt="Light" class="theme-option__icon">
+                    <span class="theme-option__label" data-i18n="colorSwitcher.light">Light</span>
+                  </button>
+                  <button class="theme-option" data-theme="dark" aria-label="Dark theme">
+                    <img src="assets/img/icons/dark-theme-icon.svg" alt="Dark" class="theme-option__icon">
+                    <span class="theme-option__label" data-i18n="colorSwitcher.dark">Dark</span>
+                  </button>
+                  <button class="theme-option" data-theme="auto" aria-label="Auto theme">
+                    <img src="assets/img/icons/system-theme-icon.svg" alt="Auto" class="theme-option__icon">
+                    <span class="theme-option__label" data-i18n="colorSwitcher.auto">Auto</span>
+                  </button>
+                </div>
+              </div>
+
               <!-- Presets Section -->
               <div class="color-switcher__section">
                 <h4 class="color-switcher__title" data-i18n="colorSwitcher.presets">Presets</h4>

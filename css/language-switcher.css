@@ -123,8 +123,8 @@
 }
 
 .language-switcher__option:hover {
-  background-color: hsla(14, 98%, 50%, 0.08);
-  border-color: hsla(14, 98%, 50%, 0.3);
+  background-color: color-mix(in srgb, var(--first-color) 20%, transparent);
+  border-color: color-mix(in srgb, var(--first-color) 50%, transparent);
   transform: translateX(3px);
 }
 
@@ -133,7 +133,7 @@
   color: var(--white-color);
   font-weight: 600;
   border-color: var(--first-color);
-  box-shadow: 0 2px 8px hsla(14, 98%, 50%, 0.3);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--first-color) 50%, transparent);
 }
 
 .language-switcher__option.active:hover {

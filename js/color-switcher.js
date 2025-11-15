@@ -1,6 +1,8 @@
 (function () {
-  const KEY = 'firstColor';
+  const COLOR_KEY = 'firstColor';
+  const THEME_KEY = 'selectedTheme';
   const DEFAULT_HEX = '#ff5c1a';
+  const DEFAULT_THEME = 'auto';
 
   const switcher = document.getElementById('color-switcher');
   if (!switcher) return;
@@ -14,11 +16,14 @@
   const preview = document.getElementById('color-preview');
   const resetBtn = document.getElementById('color-reset');
   const swatches = Array.from(document.querySelectorAll('.color-swatch'));
+  const themeOptions = Array.from(document.querySelectorAll('.theme-option'));
 
   let currentHue = 14;
   let currentSaturation = 100;
   let currentLightness = 50;
   let isDragging = false;
+  let currentTheme = DEFAULT_THEME;
+  let systemThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   // Color conversion utilities
   function hexToHSL(hex) {
@@ -87,11 +92,40 @@
     return hex.toLowerCase();
   }
 
+  // Theme functions
+  function applyTheme(theme) {
+    currentTheme = theme;
+    
+    if (theme === 'auto') {
+      // Apply based on system preference
+      const isDark = systemThemeMediaQuery.matches;
+      document.body.classList.toggle('dark-theme', isDark);
+    } else {
+      document.body.classList.toggle('dark-theme', theme === 'dark');
+    }
+    
+    try { localStorage.setItem(THEME_KEY, theme); } catch (_) {}
+    updateThemeUI();
+  }
+
+  function updateThemeUI() {
+    themeOptions.forEach(option => {
+      const theme = option.dataset.theme;
+      option.classList.toggle('active', theme === currentTheme);
+    });
+  }
+
+  function handleSystemThemeChange(e) {
+    if (currentTheme === 'auto') {
+      document.body.classList.toggle('dark-theme', e.matches);
+    }
+  }
+
   // Apply color
   function applyColor(hex) {
     const color = expandHex(hex);
     document.body.style.setProperty('--first-color', color);
-    try { localStorage.setItem(KEY, color); } catch (_) {}
+    try { localStorage.setItem(COLOR_KEY, color); } catch (_) {}
     
     // Update HSL values from hex
     const hsl = hexToHSL(color);
@@ -186,15 +220,39 @@
         }
       }
     });
+    
+    themeOptions.forEach(btn => {
+      const theme = btn.dataset.theme;
+      const labelElement = btn.querySelector('.theme-option__label');
+      if (labelElement && window.translations) {
+        const currentLang = document.documentElement.lang || 'en';
+        const translations = window.translations[currentLang];
+        const i18nKey = `colorSwitcher.${theme}`;
+        if (translations && translations[i18nKey]) {
+          btn.setAttribute('aria-label', `${translations[i18nKey]} theme`);
+        }
+      }
+    });
   }
 
-  // Load saved color
+  // Load saved preferences
   function loadSaved() {
-    let saved = null;
-    try { saved = localStorage.getItem(KEY); } catch (_) {}
+    // Load theme
+    let savedTheme = null;
+    try { savedTheme = localStorage.getItem(THEME_KEY); } catch (_) {}
     
-    if (saved && isValidHex(saved)) {
-      applyColor(saved);
+    if (savedTheme && ['light', 'dark', 'auto'].includes(savedTheme)) {
+      applyTheme(savedTheme);
+    } else {
+      applyTheme(DEFAULT_THEME);
+    }
+    
+    // Load color
+    let savedColor = null;
+    try { savedColor = localStorage.getItem(COLOR_KEY); } catch (_) {}
+    
+    if (savedColor && isValidHex(savedColor)) {
+      applyColor(savedColor);
     } else {
       const hsl = hexToHSL(DEFAULT_HEX);
       currentHue = hsl.h;
@@ -215,6 +273,19 @@
       togglePanel(false);
     }
   });
+
+  // Theme option clicks
+  themeOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      const theme = option.dataset.theme;
+      if (theme) {
+        applyTheme(theme);
+      }
+    });
+  });
+
+  // Listen for system theme changes
+  systemThemeMediaQuery.addEventListener('change', handleSystemThemeChange);
 
   // Canvas events
   canvas?.addEventListener('mousedown', (e) => {
@@ -286,9 +357,16 @@
 
   // Reset button
   resetBtn?.addEventListener('click', () => {
-    try { localStorage.removeItem(KEY); } catch (_) {}
+    try { 
+      localStorage.removeItem(COLOR_KEY);
+      localStorage.removeItem(THEME_KEY);
+    } catch (_) {}
     document.body.style.removeProperty('--first-color');
     
+    // Reset theme to auto
+    applyTheme(DEFAULT_THEME);
+    
+    // Reset color to default
     const hsl = hexToHSL(DEFAULT_HEX);
     currentHue = hsl.h;
     currentSaturation = hsl.s;
