@@ -11,7 +11,6 @@
   const sidebarClose = document.getElementById('theme-sidebar-close');
   
   if (!sidebar) return;
-
   const canvas = document.getElementById('color-canvas');
   const cursor = document.getElementById('canvas-cursor');
   const hueSlider = document.getElementById('hue-slider');
@@ -204,17 +203,11 @@
     applyColor(hex);
   }
 
-  // Toggle sidebar
-  function toggleSidebar(force) {
-    const willOpen = typeof force === 'boolean' ? force : !sidebar.classList.contains('open');
-    sidebar.classList.toggle('open', willOpen);
-    
-    // Prevent body scroll when sidebar is open
-    if (willOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+  // Toggle panel
+  function togglePanel(force) {
+    const willOpen = typeof force === 'boolean' ? force : !switcher.classList.contains('open');
+    switcher.classList.toggle('open', willOpen);
+    panel?.setAttribute('aria-hidden', String(!willOpen));
   }
 
   // Update aria labels for i18n
@@ -272,24 +265,14 @@
   }
 
   // Event Listeners
-  floatingButton?.addEventListener('click', (e) => {
+  toggleBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
-    toggleSidebar(true);
+    togglePanel();
   });
 
-  sidebarClose?.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggleSidebar(false);
-  });
-
-  sidebarOverlay?.addEventListener('click', () => {
-    toggleSidebar(false);
-  });
-
-  // Close sidebar with Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && sidebar.classList.contains('open')) {
-      toggleSidebar(false);
+  document.addEventListener('click', (e) => {
+    if (!switcher.contains(e.target)) {
+      togglePanel(false);
     }
   });
 
