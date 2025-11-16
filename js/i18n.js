@@ -113,6 +113,18 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Toggle language dropdown
   languageSwitcher.addEventListener("click", function (e) {
     if (e.target.closest(".language-switcher__current")) {
+      // Close other dropdowns first
+      const navMenu = document.getElementById('nav-menu');
+      if (navMenu) {
+        navMenu.classList.remove('show-menu');
+      }
+      const themeSidebar = document.getElementById('theme-sidebar');
+      if (themeSidebar && themeSidebar.classList.contains('open')) {
+        themeSidebar.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      
+      // Then toggle language switcher
       languageSwitcher.classList.toggle("active");
     }
   });

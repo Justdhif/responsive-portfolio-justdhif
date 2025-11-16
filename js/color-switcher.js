@@ -274,6 +274,18 @@
   // Event Listeners
   floatingButton?.addEventListener('click', (e) => {
     e.stopPropagation();
+    
+    // Close other dropdowns first
+    const navMenu = document.getElementById('nav-menu');
+    if (navMenu) {
+      navMenu.classList.remove('show-menu');
+    }
+    const languageSwitcher = document.getElementById('language-switcher');
+    if (languageSwitcher) {
+      languageSwitcher.classList.remove('active');
+    }
+    
+    // Then open sidebar
     toggleSidebar(true);
   });
 

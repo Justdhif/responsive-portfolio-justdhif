@@ -15,7 +15,7 @@
   background-color: rgba(0, 0, 0, 0);
   pointer-events: none;
   transition: background-color 0.3s ease;
-  z-index: 998;
+  z-index: calc(var(--z-language-dropdown) - 1);
 }
 
 .language-switcher.active .language-switcher__overlay {
@@ -68,7 +68,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s;
-  z-index: 999;
+  z-index: var(--z-language-dropdown);
 }
 
 .language-switcher.active .language-switcher__dropdown {
@@ -138,7 +138,7 @@
 
 .language-switcher__option.active:hover {
   transform: translateX(0);
-  background-color: hsl(14, 98%, 45%);
+  background-color: color-mix(in srgb, var(--first-color) 50%, transparent);
 }
 
 .language-switcher__option.active .language-switcher__flag {

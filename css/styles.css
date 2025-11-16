@@ -36,7 +36,11 @@
 
   /*========== z index ==========*/
   --z-tooltip: 10;
+  --z-floating-button: 500;
+  --z-theme-sidebar: 900;
+  --z-language-dropdown: 950;
   --z-fixed: 1000;
+  --z-nav-menu: 1001;
 }
 
 /*========== Responsive typography ==========*/
@@ -640,7 +644,7 @@ body.dark-theme {
     text-align: center;
     backdrop-filter: blur(8px);
     transition: top .4s;
-    z-index: 1001;
+    z-index: var(--z-nav-menu);
   }
 }
 
@@ -2242,31 +2246,32 @@ body.dark-theme {
 /*=============== FLOATING THEME BUTTON ===============*/
 .floating-theme-button {
   position: fixed;
-  right: 1.5rem;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 56px;
-  height: 56px;
+  padding: 1rem;
   background: var(--first-color);
   border: none;
-  border-radius: 50%;
   color: var(--white-color);
   font-size: 1.5rem;
   display: grid;
   place-items: center;
   cursor: pointer;
-  z-index: var(--z-fixed);
+  z-index: var(--z-floating-button);
   box-shadow: 0 4px 16px hsla(0, 0%, 0%, .2);
   transition: all .3s ease;
 }
 
 .floating-theme-button:hover {
-  transform: translateY(-50%) scale(1.1);
   box-shadow: 0 6px 24px hsla(0, 0%, 0%, .3);
 }
 
 .floating-theme-button:active {
   transform: translateY(-50%) scale(0.95);
+}
+
+.floating-theme-button i {
+  font-size: 1.25rem;
 }
 
 /*=============== THEME SIDEBAR ===============*/

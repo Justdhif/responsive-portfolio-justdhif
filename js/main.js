@@ -1,3 +1,25 @@
+/*=============== CLOSE ALL DROPDOWNS ===============*/
+function closeAllDropdowns() {
+    // Close nav menu
+    const navMenu = document.getElementById("nav-menu");
+    if (navMenu) {
+        navMenu.classList.remove("show-menu");
+    }
+    
+    // Close language switcher
+    const languageSwitcher = document.getElementById("language-switcher");
+    if (languageSwitcher) {
+        languageSwitcher.classList.remove("active");
+    }
+    
+    // Close theme sidebar
+    const themeSidebar = document.getElementById("theme-sidebar");
+    if (themeSidebar && themeSidebar.classList.contains("open")) {
+        themeSidebar.classList.remove("open");
+        document.body.style.overflow = '';
+    }
+}
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle"),
@@ -6,6 +28,18 @@ const navMenu = document.getElementById("nav-menu"),
 /* Menu show */
 if (navToggle) {
     navToggle.addEventListener("click", () => {
+        // Close other dropdowns first
+        const languageSwitcher = document.getElementById("language-switcher");
+        if (languageSwitcher) {
+            languageSwitcher.classList.remove("active");
+        }
+        const themeSidebar = document.getElementById("theme-sidebar");
+        if (themeSidebar && themeSidebar.classList.contains("open")) {
+            themeSidebar.classList.remove("open");
+            document.body.style.overflow = '';
+        }
+        
+        // Then open nav menu
         navMenu.classList.add("show-menu");
     });
 }
