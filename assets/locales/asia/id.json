@@ -88,5 +88,19 @@
   "colorSwitcher.green": "Hijau",
   "colorSwitcher.red": "Merah",
   "colorSwitcher.purple": "Ungu",
-  "colorSwitcher.yellow": "Kuning"
+  "colorSwitcher.yellow": "Kuning",
+  "colorSwitcher.accessibility": "Aksesibilitas",
+  "colorSwitcher.fontSize": "Ukuran Font",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "Pengaturan Tema",
+  "footer.subtitle": "Pengembang Frontend",
+  "footer.description": "Menciptakan pengalaman web modern dan responsif dengan penuh semangat dan perhatian terhadap detail.",
+  "footer.explore": "Jelajahi",
+  "footer.services": "Layanan",
+  "footer.contact": "Hubungi Kami",
+  "footer.location": "Indonesia",
+  "footer.copyright": "© 2024 Justdhif. Hak Cipta Dilindungi",
+  "footer.made": "Dibuat dengan",
+  "footer.in": "di Indonesia"
 }

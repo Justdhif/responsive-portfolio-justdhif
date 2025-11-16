@@ -87,5 +87,19 @@
   "colorSwitcher.green": "أخضر",
   "colorSwitcher.red": "أحمر",
   "colorSwitcher.purple": "بنفسجي",
-  "colorSwitcher.yellow": "أصفر"
+  "colorSwitcher.yellow": "أصفر",
+  "colorSwitcher.accessibility": "إمكانية الوصول",
+  "colorSwitcher.fontSize": "حجم الخط",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "إعدادات السمة",
+  "footer.subtitle": "مطور واجهة أمامية",
+  "footer.description": "إنشاء تجارب ويب حديثة ومستجيبة بشغف واهتمام بالتفاصيل.",
+  "footer.explore": "استكشف",
+  "footer.services": "الخدمات",
+  "footer.contact": "اتصل بنا",
+  "footer.location": "إندونيسيا",
+  "footer.copyright": "© 2024 Justdhif. جميع الحقوق محفوظة",
+  "footer.made": "صُنع بـ",
+  "footer.in": "في إندونيسيا"
 }

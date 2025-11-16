@@ -87,5 +87,19 @@
   "colorSwitcher.green": "Зелёный",
   "colorSwitcher.red": "Красный",
   "colorSwitcher.purple": "Фиолетовый",
-  "colorSwitcher.yellow": "Жёлтый"
+  "colorSwitcher.yellow": "Жёлтый",
+  "colorSwitcher.accessibility": "Доступность",
+  "colorSwitcher.fontSize": "Размер Шрифта",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "Настройки Темы",
+  "footer.subtitle": "Frontend Разработчик",
+  "footer.description": "Создание современных и отзывчивых веб-приложений с вниманием к деталям.",
+  "footer.explore": "Исследовать",
+  "footer.services": "Услуги",
+  "footer.contact": "Связаться с Нами",
+  "footer.location": "Индонезия",
+  "footer.copyright": "© 2024 Justdhif. Все Права Защищены",
+  "footer.made": "Сделано с",
+  "footer.in": "в Индонезии"
 }

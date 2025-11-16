@@ -87,5 +87,19 @@
   "colorSwitcher.green": "緑",
   "colorSwitcher.red": "赤",
   "colorSwitcher.purple": "紫",
-  "colorSwitcher.yellow": "黄"
+  "colorSwitcher.yellow": "黄色",
+  "colorSwitcher.accessibility": "アクセシビリティ",
+  "colorSwitcher.fontSize": "フォントサイズ",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "テーマ設定",
+  "footer.subtitle": "フロントエンド開発者",
+  "footer.description": "情熱と細部への注意を払いながら、モダンでレスポンシブなウェブ体験を作成しています。",
+  "footer.explore": "探索",
+  "footer.services": "サービス",
+  "footer.contact": "お問い合わせ",
+  "footer.location": "インドネシア",
+  "footer.copyright": "© 2024 Justdhif. 全著作権所有",
+  "footer.made": "❤️で作成",
+  "footer.in": "インドネシアにて"
 }

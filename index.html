@@ -1149,37 +1149,89 @@
     <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__container container grid">
-        <ul class="footer__links">
-          <li>
-            <a href="#about" class="footer__link" data-i18n="about">About</a>
-          </li>
+        <div class="footer__content">
+          <div class="footer__data">
+            <h3 class="footer__title">Justdhif <span class="footer__subtitle" data-i18n="footer.subtitle">Frontend Developer</span></h3>
+            <p class="footer__description" data-i18n="footer.description">
+              Creating modern and responsive web experiences with passion and attention to detail.
+            </p>
+            
+            <div class="footer__social">
+              <a href="https://www.instagram.com/justdhif.dev" target="_blank" class="footer__social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/nadhif-ararya-wiankosasi-a7a37438a" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Justdhif" target="_blank" class="footer__social-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://wa.me/6282113285557" target="_blank" class="footer__social-link" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
 
-          <li>
-            <a href="#services" class="footer__link" data-i18n="services.title"
-              >Services</a
-            >
-          </li>
+          <div class="footer__group">
+            <div class="footer__links-group">
+              <h4 class="footer__links-title" data-i18n="footer.explore">Explore</h4>
+              <ul class="footer__links">
+                <li>
+                  <a href="#home" class="footer__link" data-i18n="home">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="footer__link" data-i18n="about">About</a>
+                </li>
+                <li>
+                  <a href="#projects" class="footer__link" data-i18n="projects.title">Projects</a>
+                </li>
+                <li>
+                  <a href="#contact" class="footer__link" data-i18n="contact">Contact</a>
+                </li>
+              </ul>
+            </div>
 
-          <li>
-            <a href="#projects" class="footer__link" data-i18n="projects.title"
-              >Projects</a
-            >
-          </li>
+            <div class="footer__links-group">
+              <h4 class="footer__links-title" data-i18n="footer.services">Services</h4>
+              <ul class="footer__links">
+                <li>
+                  <a href="#services" class="footer__link" data-i18n="services.design.title">Web Design</a>
+                </li>
+                <li>
+                  <a href="#services" class="footer__link" data-i18n="services.development.title">Development</a>
+                </li>
+                <li>
+                  <a href="#services" class="footer__link" data-i18n="services.desktop.title">Desktop App</a>
+                </li>
+              </ul>
+            </div>
 
-          <!-- <li>
-            <a
-              href="#testimonials"
-              class="footer__link"
-              data-i18n="testimonials.title"
-              >Testimonials</a
-            >
-          </li> -->
-        </ul>
+            <div class="footer__links-group">
+              <h4 class="footer__links-title" data-i18n="footer.contact">Get in Touch</h4>
+              <ul class="footer__contact">
+                <li class="footer__contact-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>justdhif.dev@gmail.com</span>
+                </li>
+                <li class="footer__contact-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span data-i18n="footer.location">Indonesia</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-        <span class="footer__copy">
-          &#169; <span data-i18n="footer.rights">All Rights Reserved By</span>
-          <a href="#">Justdhif dev.</a>
-        </span>
+        <div class="footer__bottom">
+          <span class="footer__copy">
+            <span data-i18n="footer.copyright">© 2024 Justdhif. All Rights Reserved</span>
+          </span>
+          <span class="footer__made">
+            <span data-i18n="footer.made">Made with</span>
+            <i class="fa-solid fa-heart"></i>
+            <span data-i18n="footer.in">in Indonesia</span>
+          </span>
+        </div>
       </div>
     </footer>
 
@@ -1224,6 +1276,27 @@
             </div>
           </div>
 
+          <!-- Accessibility Section -->
+          <div class="color-switcher__section">
+            <h4 class="color-switcher__title" data-i18n="colorSwitcher.accessibility">Accessibility</h4>
+            
+            <!-- Font Size Control -->
+            <div class="a11y-control">
+              <label class="a11y-control__label" data-i18n="colorSwitcher.fontSize">Font Size</label>
+              <div class="a11y-control__buttons">
+                <button class="a11y-btn" id="decrease-font" aria-label="Decrease font size">
+                  <i class="fa-solid fa-minus"></i>
+                  <span data-i18n="colorSwitcher.smaller">A-</span>
+                </button>
+                <span class="a11y-control__value" id="font-size-display">100%</span>
+                <button class="a11y-btn" id="increase-font" aria-label="Increase font size">
+                  <i class="fa-solid fa-plus"></i>
+                  <span data-i18n="colorSwitcher.larger">A+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <!-- Presets Section -->
           <div class="color-switcher__section">
             <h4 class="color-switcher__title" data-i18n="colorSwitcher.presets">Presets</h4>
@@ -1262,7 +1335,7 @@
 
           <!-- Actions -->
           <div class="color-switcher__actions">
-            <button class="color-switcher__reset" id="color-reset" type="button" data-i18n="colorSwitcher.reset">Reset</button>
+            <button class="color-switcher__reset" id="color-reset" type="button" data-i18n="colorSwitcher.reset">Reset All</button>
           </div>
         </div>
       </div>
@@ -1285,5 +1358,8 @@
 
     <!--=============== COLOR SWITCHER JS ===============-->
     <script src="js/color-switcher.js"></script>
+
+    <!--=============== ACCESSIBILITY JS ===============-->
+    <script src="js/accessibility.js"></script>
   </body>
 </html>

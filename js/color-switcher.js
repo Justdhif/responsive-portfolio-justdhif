@@ -403,6 +403,11 @@
     currentSaturation = hsl.s;
     currentLightness = hsl.l;
     updateUI(DEFAULT_HEX);
+    
+    // Reset accessibility settings
+    if (typeof window.resetAccessibilitySettings === 'function') {
+      window.resetAccessibilitySettings();
+    }
   });
 
   // Language change observer

@@ -87,5 +87,19 @@
   "colorSwitcher.green": "سبز",
   "colorSwitcher.red": "قرمز",
   "colorSwitcher.purple": "بنفش",
-  "colorSwitcher.yellow": "زرد"
+  "colorSwitcher.yellow": "زرد",
+  "colorSwitcher.accessibility": "دسترسی‌پذیری",
+  "colorSwitcher.fontSize": "اندازه فونت",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "تنظیمات تم",
+  "footer.subtitle": "توسعه‌دهنده فرانت‌اند",
+  "footer.description": "ایجاد تجربیات وب مدرن و رسپانسیو با علاقه و توجه به جزئیات.",
+  "footer.explore": "کاوش",
+  "footer.services": "خدمات",
+  "footer.contact": "تماس با ما",
+  "footer.location": "اندونزی",
+  "footer.copyright": "© 2024 Justdhif. تمامی حقوق محفوظ است",
+  "footer.made": "ساخته شده با",
+  "footer.in": "در اندونزی"
 }

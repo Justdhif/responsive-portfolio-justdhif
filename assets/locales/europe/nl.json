@@ -87,5 +87,19 @@
   "colorSwitcher.green": "Groen",
   "colorSwitcher.red": "Rood",
   "colorSwitcher.purple": "Paars",
-  "colorSwitcher.yellow": "Geel"
+  "colorSwitcher.yellow": "Geel",
+  "colorSwitcher.accessibility": "Toegankelijkheid",
+  "colorSwitcher.fontSize": "Lettergrootte",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "Thema Instellingen",
+  "footer.subtitle": "Frontend Ontwikkelaar",
+  "footer.description": "Het creëren van moderne en responsive web-ervaringen met passie en aandacht voor detail.",
+  "footer.explore": "Verkennen",
+  "footer.services": "Diensten",
+  "footer.contact": "Neem Contact Op",
+  "footer.location": "Indonesië",
+  "footer.copyright": "© 2024 Justdhif. Alle Rechten Voorbehouden",
+  "footer.made": "Gemaakt met",
+  "footer.in": "in Indonesië"
 }

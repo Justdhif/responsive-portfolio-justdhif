@@ -87,5 +87,19 @@
   "colorSwitcher.green": "ירוק",
   "colorSwitcher.red": "אדום",
   "colorSwitcher.purple": "סגול",
-  "colorSwitcher.yellow": "צהוב"
+  "colorSwitcher.yellow": "צהוב",
+  "colorSwitcher.accessibility": "נגישות",
+  "colorSwitcher.fontSize": "גודל גופן",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "הגדרות ערכת נושא",
+  "footer.subtitle": "מפתח קדמי",
+  "footer.description": "יצירת חוויות אינטרנט מודרניות ורספונסיביות בתשוקה ותשומת לב לפרטים.",
+  "footer.explore": "חקור",
+  "footer.services": "שירותים",
+  "footer.contact": "צור קשר",
+  "footer.location": "אינדונזיה",
+  "footer.copyright": "© 2024 Justdhif. כל הזכויות שמורות",
+  "footer.made": "נעשה באהבה",
+  "footer.in": "באינדונזיה"
 }

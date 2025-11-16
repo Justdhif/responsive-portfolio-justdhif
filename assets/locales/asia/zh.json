@@ -87,5 +87,19 @@
   "colorSwitcher.green": "绿色",
   "colorSwitcher.red": "红色",
   "colorSwitcher.purple": "紫色",
-  "colorSwitcher.yellow": "黄色"
+  "colorSwitcher.yellow": "黄色",
+  "colorSwitcher.accessibility": "无障碍功能",
+  "colorSwitcher.fontSize": "字体大小",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "主题设置",
+  "footer.subtitle": "前端开发者",
+  "footer.description": "充满热情和关注细节地创造现代化和响应式的网页体验。",
+  "footer.explore": "探索",
+  "footer.services": "服务",
+  "footer.contact": "联系我们",
+  "footer.location": "印度尼西亚",
+  "footer.copyright": "© 2024 Justdhif. 版权所有",
+  "footer.made": "用❤️制作",
+  "footer.in": "于印度尼西亚"
 }

@@ -87,5 +87,19 @@
   "colorSwitcher.green": "Yeşil",
   "colorSwitcher.red": "Kırmızı",
   "colorSwitcher.purple": "Mor",
-  "colorSwitcher.yellow": "Sarı"
+  "colorSwitcher.yellow": "Sarı",
+  "colorSwitcher.accessibility": "Erişilebilirlik",
+  "colorSwitcher.fontSize": "Yazı Boyutu",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "Tema Ayarları",
+  "footer.subtitle": "Frontend Geliştirici",
+  "footer.description": "Tutku ve detaylara dikkatle modern ve duyarlı web deneyimleri yaratıyorum.",
+  "footer.explore": "Keşfet",
+  "footer.services": "Hizmetler",
+  "footer.contact": "Bize Ulaşın",
+  "footer.location": "Endonezya",
+  "footer.copyright": "© 2024 Justdhif. Tüm Hakları Saklıdır",
+  "footer.made": "İle Yapıldı",
+  "footer.in": "Endonezya'da"
 }

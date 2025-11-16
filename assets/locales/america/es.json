@@ -87,5 +87,19 @@
   "colorSwitcher.green": "Verde",
   "colorSwitcher.red": "Rojo",
   "colorSwitcher.purple": "Morado",
-  "colorSwitcher.yellow": "Amarillo"
+  "colorSwitcher.yellow": "Amarillo",
+  "colorSwitcher.accessibility": "Accesibilidad",
+  "colorSwitcher.fontSize": "Tamaño de Fuente",
+  "colorSwitcher.smaller": "A-",
+  "colorSwitcher.larger": "A+",
+  "colorSwitcher.settings": "Configuración del Tema",
+  "footer.subtitle": "Desarrollador Frontend",
+  "footer.description": "Creando experiencias web modernas y responsivas con pasión y atención al detalle.",
+  "footer.explore": "Explorar",
+  "footer.services": "Servicios",
+  "footer.contact": "Contáctanos",
+  "footer.location": "Indonesia",
+  "footer.copyright": "© 2024 Justdhif. Todos los Derechos Reservados",
+  "footer.made": "Hecho con",
+  "footer.in": "en Indonesia"
 }
